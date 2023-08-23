@@ -1,0 +1,22 @@
+/* Accordion / Drop-down options Start */
+
+details {
+  border: none;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: none;
+  margin-bottom: 0.5em;
+}
+
+/* Accordion / Drop-down options End */
