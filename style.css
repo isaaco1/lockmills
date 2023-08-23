@@ -19,4 +19,32 @@ details[open] summary {
   margin-bottom: 0.5em;
 }
 
-/* Accordion / Drop-down options End */
+/* Columns */
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  border: none;
+}
+
+/* Grid Layout for Services */
+
+/* Style for the grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 20px; /* Gap between columns */
+  margin: 20px; /* Margin around the grid container */
+}
+
+/* Style for each grid item */
+.item {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
