@@ -7,6 +7,10 @@
 body {
   font-family: "Lora", serif;
 }
+h1 {
+  color: var(--green);
+  font-size: 34px;
+}
 
 /* Nav Bar Styling */
 
@@ -15,7 +19,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: var(--green);
+  background-color: white;
 }
 
 li {
@@ -24,15 +28,31 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: var(--green);
   text-align: center;
   padding: 14px 16px;
+  font-size: 1.1em;
+  font-weight: 500;
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Change the link color to Var Green on White Background on hover */
 li a:hover {
-  background-color: #111;
+  background-color: var(--green);
+  color: white;
+}
+
+/* Hero Section */
+
+#hero {
+  background-image: url(Hero-Photo.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Accordion / Drop-down options Start */
