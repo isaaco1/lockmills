@@ -14,6 +14,10 @@ h1 {
 
 /* Nav Bar Styling */
 
+.logo {
+  max-height: 70px;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -53,6 +57,22 @@ li a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+button {
+  background-color: var(--green);
+  border-color: none;
+  padding: 20px 30px;
+  color: white;
+  font-size: 1.2em;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--green);
+  border-radius: 5px;
+  box-shadow: none;
+  border-color: var(--green);
 }
 
 /* Accordion / Drop-down options Start */
