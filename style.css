@@ -5,17 +5,33 @@
 }
 
 body {
-  font-family: "Lora", serif;
+  font-family: "poppins", sans-serif;
 }
 h1 {
+  font-family: "Lora", serif;
   color: var(--green);
   font-size: 34px;
+  text-align: center;
 }
 
+h2 {
+  font-family: "Lora", serif;
+  color: var(--green);
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
 /* Nav Bar Styling */
 
 .logo {
   max-height: 70px;
+}
+.topnav {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 ul {
@@ -53,6 +69,7 @@ li a:hover {
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
+  padding: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +90,12 @@ button:hover {
   border-radius: 5px;
   box-shadow: none;
   border-color: var(--green);
+}
+
+/* Section: Why Choose Us */
+#why_us_image img {
+  width: 75%;
+  align-content: center;
 }
 
 /* Accordion / Drop-down options Start */
@@ -100,28 +123,44 @@ details[open] summary {
 
 .container {
   display: flex;
-  justify-content: center;
 }
 
-.column {
+.column_1,
+.column_2 {
   flex: 1;
-  padding: 20px;
+  padding: 50px;
   border: none;
+  display: grid;
+  align-content: center;
 }
 
 /* Grid Layout for Services */
 
 /* Style for the grid container */
+.services {
+  background-color: #eef5f1;
+  padding: 50px 75px 50px 75px;
+}
+
 .grid-container {
+  padding: 50px 50px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-template-columns: repeat(
+    3,
+    minmax(200px, 1fr)
+  ); /* Three columns with equal width */
   gap: 20px; /* Gap between columns */
   margin: 20px; /* Margin around the grid container */
 }
 
 /* Style for each grid item */
-.item {
-  background-color: lightblue;
+.item_box {
+  background-color: white;
   padding: 20px;
   text-align: center;
+  /* min-height: 500px; */
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.grid-image {
+  max-width: 100%;
 }
